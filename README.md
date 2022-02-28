@@ -3,8 +3,6 @@
 #### 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
 [Shan Liu](https://github.com/33KU), Guoqiang Xiao, Xiaohui Xu, Song Wu
 
-##### [[Paper-official](https://XXXXXXXXXXXXX)] 
-
 College of Computer and Information Science, Southwest University, Chongqing, China
 
 ## Introdcurion
@@ -139,9 +137,13 @@ If this code/BNCAGAN is useful for your research, please cite our paper:
 }
 ```
 
+## Contact
 
-## License
+swu1538@email.swu.edu.cn
 
-[MIT License](https://opensource.org/licenses/MIT)
+## Acknowledgments
+
+Our code is developed based on [UEGAN](https://github.com/eezkni/UEGAN) and [UGATIT-pytorch](https://github.com/znxlwm/UGATIT-pytorch). We thank the awesome work provided by UEGAN and UGATIT.
+Great thanks to the reviewers from the ICASSP conference for their invaluable feedbacks and suggestions.
 
 
