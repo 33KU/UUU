@@ -20,7 +20,7 @@ This website shares the codes of the "BI-DIRECTIONAL NORMALIZATION AND COLOR ATT
 Most existing image enhancement methods require paired images for supervised learning, and rarely considering the aesthetic quality. This paper proposes a bi-directional normalization and color attention-guided generative adversarial network (BNCAGAN) for unsupervised image enhancement. An auxiliary attention classifier (AAC) and a bi-directional normalization residual (BNR) module are designed to assist the generator in flexibly controlling the local details with the constraint from both the low/high-quality domain. Moreover, a color attention module (CAM) is proposed to preserve the color fidelity in the discriminator. The qualitative and quantitative experimental results demonstrated that our BNCAGAN is superior to the existing methods on image enhancement. It can effectively improve the authenticity and naturalness of the enhanced images. The source code is available at https://github.com/SWU-CS-MediaLab/BNCAGAN.
 
 <!-- **The framework of BNCAGAN:** -->
-<img src="./figures/framework.png" width = "100%" height = "100%" div align=center>
+<img src="./figures/overview.png" width = "100%" height = "100%" div align=center>
 
 
 ## Requirements and Installation
