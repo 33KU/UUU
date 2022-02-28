@@ -21,11 +21,11 @@ Most existing image enhancement methods require paired images for supervised lea
 
 ## Requirements and Installation
 We recommended the following dependencies.
-*  Python 3.6
-*  PyTorch 1.4.0
-*  tqdm 4.43.0
+*  Python 3.7
+*  PyTorch 1.7.1
+*  tqdm 4.42.1
 *  munch 2.5.0
-*  torchvision 0.5.0
+*  torchvision 0.8.2
 
 ## The method of obtaining the image of the MIT-Adobe FiveK Dataset can be found in [UEGAN](https://github.com/eezkni/UEGAN). 
 ## Preparing Data for the MIT-Adobe FiveK Dataset 
