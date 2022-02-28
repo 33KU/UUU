@@ -1,7 +1,7 @@
 ## BI-DIRECTIONAL NORMALIZATION AND COLOR ATTENTION-GUIDED GENERATIVE ADVERSARIAL NETWORK FOR IMAGE ENHANCEMENT
 
 #### 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
-[Shan Liu](https://eezkni.github.io/), [Guoqiang Xiao], [Xiaohui Xu], [Song Wu]
+[Shan Liu](https://github.com/33KU), [Guoqiang Xiao], [Xiaohui Xu], [Song Wu]
 
 ##### [[Paper-official](https://XXXXXXXXXXXXX)] 
 
@@ -31,7 +31,7 @@ We recommended the following dependencies.
 *  munch 2.5.0
 *  torchvision 0.5.0
 
-The method of obtaining the image of the MIT-Adobe FiveK Dataset can be found in [UEGAN](https://github.com/eezkni/UEGAN). 
+## The method of obtaining the image of the MIT-Adobe FiveK Dataset can be found in [UEGAN](https://github.com/eezkni/UEGAN). 
 ## Preparing Data for the MIT-Adobe FiveK Dataset 
 You can follow the instructions below to generate your own training images. Or, you can directly download exported images [FiveK_dataset_nzk](https://drive.google.com/drive/folders/1Jv0_9CnYxh_2ReFaVrwG19O3F7xBtdZT?usp=sharing). (~6GB)
 
@@ -61,7 +61,7 @@ You can follow the instructions below to generate your own training images. Or, 
    - Finally, click `Export`.
 
 
-### Getting the DPED Dataset 
+## Getting the DPED Dataset 
 You can download the dataset from [DPED](http://people.ee.ethz.ch/~ihnatova/#dataset). 
 
 
@@ -96,7 +96,7 @@ data
 
 To train BNCAGAN on FiveK, run the training script below.
 ```
-python main.py --mode train --version UEGAN-FiveK --use_tensorboard True \
+python main.py --mode train --version BNCAGAN-FiveK --use_tensorboard False \
 --is_test_nima True --is_test_psnr_ssim True
 ```
 
@@ -104,27 +104,25 @@ This script will create a folder named ```./results``` in which the resulting ar
 - The PSNR results will be saved to here: ```./results/psnr_val_results``` (including PSNR for each valiaded epoch and the summary)
 - The SSIM results will be saved to here: ```./results/ssim_val_results``` (including SSIM for each valiaded epoch and the summary)
 - The NIMA results will be saved to here: ```./results/nima_val_results``` (including NIMA for each valiaded epoch and the summary)
-- The training logs will be saved to here: ```./results/UEGAN-FiveK/logs```
-- The models will be saved to here: ```./results/UEGAN-FiveK/models```
-- The intermediate results will be saved to here: ```./results/UEGAN-FiveK/samples```
-- The validation results will be saved to here: ```./results/UEGAN-FiveK/validation```
-- The test results will be saved to here: ```./results/UEGAN-FiveK/test```
+- The training logs will be saved to here: ```./results/BNCAGAN-FiveK/logs```
+- The models will be saved to here: ```./results/BNCAGAN-FiveK/models```
+- The intermediate results will be saved to here: ```./results/BNCAGAN-FiveK/samples```
+- The validation results will be saved to here: ```./results/BNCAGAN-FiveK/validation```
+- The test results will be saved to here: ```./results/BNCAGAN-FiveK/test```
 
-
-To view training results and loss plots, run ```tensorboard --logdir=results/UEGAN-FiveK/logs```, and click the URL accordingly (For example, http://nzk-ub:6007/).
 
 The summary of PSNR test results will be save to ```./results/psnr_val_results/PSNR_total_results_epoch_avgpsnr.csv```. Find the best epoch in the last line of ```PSNR_total_results_epoch_avgpsnr.csv```.
 
-To test UEGAN on FiveK, run the test script below.
+To test BNCAGAN on FiveK, run the test script below.
 ```
-python main.py --mode test --version UEGAN-FiveK --pretrained_model xx (best epoch, e.g., 88) \
+python main.py --mode test --version BNCAGAN-FiveK --pretrained_model xx (best epoch, e.g., 100) \
 --is_test_nima True --is_test_psnr_ssim True
 
 ```
 
 ## Citation
 
-If this code/UEGAN is useful for your research, please cite our paper:
+If this code/BNCAGAN is useful for your research, please cite our paper:
 
 ```
 @article{ni2020towards,
@@ -137,10 +135,6 @@ If this code/UEGAN is useful for your research, please cite our paper:
   publisher={IEEE}
 }
 ```
-
-## Contact
-
-Thanks for your attention! If you have any suggestion or question, feel free to leave a message here or contact Mr. Zhangkai Ni (eezkni@gmail.com).
 
 
 ## License
