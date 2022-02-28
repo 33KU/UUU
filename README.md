@@ -11,10 +11,6 @@ College of Computer and Information Science, Southwest University, Chongqing, Ch
 
 This website shares the codes of the "BI-DIRECTIONAL NORMALIZATION AND COLOR ATTENTION-GUIDED GENERATIVE ADVERSARIAL NETWORK FOR IMAGE ENHANCEMENT", 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). 
 
-<img src="./figures/examples.PNG" width = "100%" height = "100%" div align=center>
-
-
-
 ### Abstract
 
 Most existing image enhancement methods require paired images for supervised learning, and rarely considering the aesthetic quality. This paper proposes a bi-directional normalization and color attention-guided generative adversarial network (BNCAGAN) for unsupervised image enhancement. An auxiliary attention classifier (AAC) and a bi-directional normalization residual (BNR) module are designed to assist the generator in flexibly controlling the local details with the constraint from both the low/high-quality domain. Moreover, a color attention module (CAM) is proposed to preserve the color fidelity in the discriminator. The qualitative and quantitative experimental results demonstrated that our BNCAGAN is superior to the existing methods on image enhancement. It can effectively improve the authenticity and naturalness of the enhanced images. The source code is available at https://github.com/SWU-CS-MediaLab/BNCAGAN.
@@ -120,19 +116,26 @@ python main.py --mode test --version BNCAGAN-FiveK --pretrained_model xx (best e
 
 ```
 
+
+## Additional experimental results pictures
+<img src="./figures/fiveK.png" width = "100%" height = "100%" div align=center>
+The Fig. 1 shows the comparison results with the state-of-the-art methods on FiveK dataset.
+
+<img src="./figures/dped.png" width = "100%" height = "100%" div align=center>
+The Fig. 2 shows the comparison results with the state-of-the-art methods on FiveK dataset.
+
+<img src="./figures/loss.png" width = "100%" height = "100%" div align=center>
+The Fig. 3 shows the effectiveness of our designed loss function in BNCAGAN.
+
+<img src="./figures/module.png" width = "100%" height = "100%" div align=center>
+The Fig. 4 shows the effectiveness of our proposed modules in BNCAGAN.
+
 ## Citation
 
 If this code/BNCAGAN is useful for your research, please cite our paper:
 
 ```
-@article{ni2020towards,
-  title={Towards unsupervised deep image enhancement with generative adversarial network},
-  author={Ni, Zhangkai and Yang, Wenhan and Wang, Shiqi and Ma, Lin and Kwong, Sam},
-  journal={IEEE Transactions on Image Processing},
-  volume={29},
-  pages={9140--9151},
-  year={2020},
-  publisher={IEEE}
+@article{
 }
 ```
 
