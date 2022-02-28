@@ -1,7 +1,7 @@
 ## BI-DIRECTIONAL NORMALIZATION AND COLOR ATTENTION-GUIDED GENERATIVE ADVERSARIAL NETWORK FOR IMAGE ENHANCEMENT
 
 #### 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
-[Shan Liu](https://github.com/33KU), [Guoqiang Xiao], [Xiaohui Xu], [Song Wu]
+[Shan Liu](https://github.com/33KU), Guoqiang Xiao, Xiaohui Xu, Song Wu
 
 ##### [[Paper-official](https://XXXXXXXXXXXXX)] 
 
